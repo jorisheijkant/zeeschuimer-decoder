@@ -10,7 +10,7 @@ In order to run this script you need Python. If you do not have Python installed
 1. Download this repository to your pc, using either the download button at the top of this page or by cloning the repository using git.
 2. Open a terminal and navigate to the folder where you downloaded the repository. See [here](https://openclassrooms.com/en/courses/4614926-learn-the-command-line-in-terminal/4634356-navigate-your-system) for instructions on how to navigate with your terminal. 
 3. Run the following command to install the required packages: `pip install -r requirements.txt`
-4. Add the script as a command line alias by running the following command: `alias zeeschuimer="python3 /path/to/zeeschuimer.py"`. Replace `/path/to/zeeschuimer.py` with the path to the `zeeschuimer.py` file. You can find this path by navigating to the folder where you downloaded the repository and running the command `pwd`.
+4. Add the script as a command line alias by running the following command: `alias zeeschuimer="python3 /path/to/zeeschuimer.py"`. Replace `/path/to/zeeschuimer.py` with the path to the `zeeschuimer.py` file. You can find this path by navigating to the folder where you downloaded the repository and running the command `readlink -f zeeschuimer.py`.
 5. Use the script now whenever you are in a directory with a Zeeschuimer `.ndjson` file by running the command `zeeschuimer` in the following way:
 ```
 zeeschuimer <filename> <type>
