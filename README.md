@@ -1,5 +1,5 @@
 # Zeeschuimer decoder
-This tool converts the Zeeschuimer data from the [Zeeschuimer website](https://www.zeeschuimer.nl/) to a readable CSV file. It's opinionated, as in that it only converts certain data in order to keep files small and managable. 
+This tool converts the Zeeschuimer data from the [Zeeschuimer scraping tool](https://github.com/digitalmethodsinitiative/zeeschuimer) to a readable CSV file. It's opinionated, as in that it only converts certain data in order to keep files small and managable. 
 
 In the future, the script might not work as intended anymore, as the Zeeschuimer/social media data structures might change.
 
