@@ -1,7 +1,7 @@
 # Zeeschuimer decoder
 This tool converts the Zeeschuimer data from the [Zeeschuimer website](https://www.zeeschuimer.nl/) to a readable CSV file. It's opinionated, as in that it only converts certain data in order to keep files small and managable. 
 
-In the future, the script might not work as intended anymore, as the Zeeschuimer data structure might change.
+In the future, the script might not work as intended anymore, as the Zeeschuimer/social media data structures might change.
 
 ## Prerequisites
 In order to run this script you need Python. If you do not have Python installed, download it [here](https://www.python.org/). 
@@ -16,5 +16,5 @@ In order to run this script you need Python. If you do not have Python installed
 zeeschuimer <filename> <type>
 ```
 Replace `<filename>` with the name of the `.ndjson` file and `<type>` with the type of data you want to convert. The following types are supported:
-- Tiktok (if no type is specified, this is the default type)
-- Twitter
+- tiktok (if no type is specified, this is the default type)
+- twitter

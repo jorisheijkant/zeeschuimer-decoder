@@ -9,7 +9,11 @@ from parsers.twitter import parse_twitter
 
 # Get the arguments provided to the script as terminal arguments
 provided_file = sys.argv[1]
-provided_type = sys.argv[2]
+provided_type = False
+
+# Check if there is a second argument, if so, use it as type
+if(len(sys.argv) > 2):
+    provided_type = sys.argv[2]
 
 def convert_zeeschuimer(file, type="tiktok"):
     print(f"Converting {file} to csv, type is {type}")
@@ -53,5 +57,7 @@ def convert_zeeschuimer(file, type="tiktok"):
 # Check if there is a file and a type provided, and the file contains .ndjson
 if(provided_file and provided_type and provided_file.endswith(".ndjson")):
     convert_zeeschuimer(provided_file, provided_type)
+elif(provided_file and provided_file.endswith(".ndjson")):
+    convert_zeeschuimer(provided_file)
 else:
-    print("Please provide a valid ndjson file and a type")
+    print("Please provide a valid ndjson file")
